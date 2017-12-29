@@ -8,9 +8,83 @@
 	color: white;
 	padding: 12px 26px;
 	text-decoration: none;
-	margin: 2px 1px;
+	margin: 4px 2px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
 }
 
+.ligneRequete {
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 2px;
+	padding-bottom : 2px;
+	display : flex;
+	justify-content : space-between;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ligneRequete .resultatRequete {
+	display : flex;
+	justify-content : flex-start;
+	background-color: #3cabbc;
+	font-family: 'Open Sans', sans-serif;
+	text-align:center;
+	font-size:16px;
+	border: none;
+	color: white;
+	padding: 12px 26px;
+	text-decoration: none;
+	margin: 4px 2px;
+	width: 100%;
+}
+		
+.ligneRequete form {
+    text-align: center;
+}	
+
+.boutonsRequete {
+	display : flex;
+	justify-content : flex-end;
+}	
+		
+.boutonsRequete input[type=button], .boutonsRequete input[type=submit], .boutonsRequete input[type=reset] {
+    background-color: #3cabbc;
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+    border: none;
+    color: white;
+    padding: 12px 26px;
+    text-decoration: none;
+    margin: 4px 2px;
+	width: 100%;
+    cursor: pointer;
+}
+
+.boutonsRequete input[type=button]:hover, .boutonsRequete input[type=submit]:hover, .boutonsRequete input[type=reset]:hover {
+	background-color: #308896;
+}
+
+.boutonsRequeteSupprimer {
+	display : flex;
+	justify-content : flex-end;
+}
+
+.boutonsRequeteSupprimer input[type=button], .boutonsRequeteSupprimer input[type=submit], .boutonsRequeteSupprimer input[type=reset] {
+    background-color: #b70000;
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+    border: none;
+    color: white;
+    padding: 12px 26px;
+    text-decoration: none;
+    margin: 4px 2px;
+	width: 100%;
+    cursor: pointer;
+}
+
+.boutonsRequeteSupprimer input[type=button]:hover, .boutonsRequeteSupprimer input[type=submit]:hover, .boutonsRequeteSupprimer input[type=reset]:hover {
+	background-color: #8e0000;
+}

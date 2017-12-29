@@ -36,7 +36,7 @@
 			
 			<!-- Bandeau de logo du site -->
 			<div id="bandeauLogo">
-				<a href="/" id="logo">Hands Rehabilitation</a>
+				<a href="accueil.php" id="logo">Hands Rehabilitation</a>
 			</div>
 			
 			<!-- Bandeau de menu -->
