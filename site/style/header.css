@@ -1,0 +1,99 @@
+﻿	.espaceConnexion
+	{
+		background-color : #ddd;
+		padding-left : 10px;
+		padding-right : 10px;
+		padding-top : 2px;
+		padding-bottom : 2px;
+		display : flex;
+		justify-content : space-between;
+	}
+	
+	.sectionDisconnectedUser
+	{
+		display : flex;
+		justify-content : flex-start;
+	}
+	
+	.sectionConnectedUser
+	{
+		display : flex;
+		justify-content : flex-start;
+		background-color: #3CBC8D;
+		font-family: 'Open Sans', sans-serif;
+		text-align:center;
+		font-size:16px;
+		border: none;
+		color: white;
+		padding: 12px 26px;
+		text-decoration: none;
+		margin: 4px 2px;
+		width: 100%;
+	}
+	
+	.boutonsConnexion
+	{
+		display : flex;
+		justify-content : flex-end;
+	}
+	
+	#bandeauLogo {
+		text-align:center;
+		padding-bottom: 15px;
+	}
+
+	#logo {
+	  font-family: 'Open Sans', sans-serif;
+	  color: #555;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  font-size: 100px;
+	  font-weight: 800;
+	  letter-spacing: -3px;
+	  line-height: 1;
+	  text-shadow: #EDEDED 3px 2px 0;
+	  position: relative;
+	}
+	
+	
+
+	/* Bas de page */
+	
+	footer 
+	{
+		height : 100px;
+		background-color : #ddd;
+		bottom : 0px;
+	}
+	
+	.liensInfo
+	{
+		font-family: 'Open Sans', sans-serif;
+		height : 100%;
+		display : flex;
+		justify-content : space-around;		
+	}
+	
+	.liensInfo li
+	{
+		display: inline-block ;
+		padding-top : 40px;
+		
+	}
+
+	
+	.onglet 
+	{
+		font-size: 1em ;
+		color: black ;	
+		text-decoration: none ;
+		font-style: normal ;
+		font-weight: normal ;	
+		margin : auto;
+	}
+	
+		
+
+	
+
+

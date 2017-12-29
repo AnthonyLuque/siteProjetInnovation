@@ -1,0 +1,46 @@
+﻿form {
+    text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+header form 
+{
+	display : flex;
+	width : 100%;
+	
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+	border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #3CBC8D;
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+    border: none;
+    color: white;
+    padding: 12px 26px;
+    text-decoration: none;
+    margin: 4px 2px;
+	width: 100%;
+    cursor: pointer;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+	background-color: #309670;
+}
