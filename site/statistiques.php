@@ -29,7 +29,11 @@
 
 		
 		<!-- Page de statistiques -->
+		<div class="body">
 		
+			
+		
+		</div>
 		
 		
 

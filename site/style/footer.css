@@ -5,35 +5,5 @@
 		background-color : #ddd;
 		bottom : 0px;
 	}
-	
-	.liensInfo
-	{
-		font-family: 'Open Sans', sans-serif;
-		height : 100%;
-		display : flex;
-		justify-content : space-around;		
-	}
-	
-	.liensInfo li
-	{
-		display: inline-block ;
-		padding-top : 40px;
-		
-	}
-
-	
-	.onglet 
-	{
-		font-size: 1em ;
-		color: black ;	
-		text-decoration: none ;
-		font-style: normal ;
-		font-weight: normal ;	
-		margin : auto;
-	}
-	
-		
-
-	
 
 

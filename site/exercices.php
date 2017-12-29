@@ -30,9 +30,10 @@
 		
 		<!-- Page d'exercices -->
 		<div class="body">
+		
 			<?php 
 				// Si l'utilisateur est un Patient
-				if (isset($_SESSION['login']) == "Patient"){ 
+				if ($_SESSION['login'] == "Patient"){ 
 				
 					$req = $bdd-> prepare('SELECT * FROM associationexcercicepatient,exercice WHERE idPatient = :idUtilisateur AND associationexcercicepatient.idExercice = exercice.idExercice');
 					$req->bindValue('idUtilisateur', $_SESSION['idUtilisateur'], PDO::PARAM_STR);
@@ -55,11 +56,18 @@
 					$req->execute();
 					
 					while($resultat = $req->fetch(PDO::FETCH_ASSOC)) {
-						echo $resultat['nomExercice']; ?> <br /> <?php
+			?> 
+						<div class="resultatRequete"> 
+			<?php
+						echo $resultat['nomExercice']; 
+			?> 
+						</div> 
+			<?php
 					}
 				
 				}
 			?>
+			
 		</div>
 		
 

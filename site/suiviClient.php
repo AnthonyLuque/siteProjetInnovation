@@ -29,7 +29,36 @@
 
 		
 		<!-- Page de suivi client -->
+		<div class="body">
 		
+			<?php 
+				// Si l'utilisateur est un Patient
+				if ($_SESSION['login'] == "Patient"){ 
+				
+					
+
+				// Si l'utilisateur est un Medecin
+				} else {
+
+					$req = $bdd-> prepare('SELECT * FROM utilisateur WHERE idMedecinReferent = :idMedecinReferent ORDER BY utilisateur.nomUtilisateur, utilisateur.prenomUtilisateur');
+					$req->bindValue('idMedecinReferent', $_SESSION['idUtilisateur'], PDO::PARAM_STR);
+					$req->execute();
+					
+					while($resultat = $req->fetch(PDO::FETCH_ASSOC)) {
+			?> 
+						<div class="resultatRequete"> 
+			<?php
+							echo $resultat['nomUtilisateur'] . ' ' . $resultat['prenomUtilisateur']; 
+			?> 
+
+						</div> 
+			<?php
+					}
+				
+				}
+			?>
+		
+		</div>		
 		
 		
 

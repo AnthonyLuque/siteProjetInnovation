@@ -32,8 +32,11 @@
 		
 
 		<!-- Page d'accueil -->
+		<div class="body">
 		
+			
 		
+		</div>
 		
 
 		<!-- Footer -->
