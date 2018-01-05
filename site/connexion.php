@@ -9,7 +9,6 @@
 
 	<head>
 		<title> HandsRehab.com </title>
-		<link rel="icon" type="image/png" href="img/favicon1.png" >
 		<meta charset = "UTF-8">
 		<link href="style/main.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="style/header.css" rel="stylesheet" type="text/css" media="screen">
@@ -39,7 +38,7 @@
 			if(!isset($_POST['submitConnexion'])){
 			?>
 				<form method="post" action="connexion.php" align="center">
-					<input type="text" name="username" placeholder = "Username / e-mail" style="width : 250px;"/> <br />
+					<input type="text" name="username" placeholder = "Username" style="width : 250px;"/> <br />
 					<input type="password" name="password" placeholder = "Password" style="width : 250px;"> <br />
 				
 					<input type="submit" name = "submitConnexion" value="Se Connecter" style="width : 160px">

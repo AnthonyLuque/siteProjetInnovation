@@ -7,7 +7,6 @@
 
 	<head>
 		<title> HandsRehab.com </title>
-		<link rel="icon" type="image/png" href="img/favicon1.png" >
 		<meta charset = "UTF-8">
 		<link href="style/main.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="style/header.css" rel="stylesheet" type="text/css" media="screen">
