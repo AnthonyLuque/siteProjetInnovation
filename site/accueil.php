@@ -33,16 +33,6 @@
 		
 
 		<!-- Page d'accueil -->
-		<div class="body">
-			<?php 
-			if(isset($_GET['success'])){
-				if($_GET['success'] == 'login'){
-					echo '<p> Connected successfully </p>';
-				}
-			}
-
-
-			 ?>
 		
 			
 		
