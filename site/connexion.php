@@ -36,6 +36,11 @@
 		<div class="body">
 		
 			<?php 
+			if(isset($_GET['error'])){
+				if($_GET['error'] == 'login'){
+					echo '<p> Incorrect username or password. Try again </p>';
+				}
+			}
 			if(!isset($_POST['submitConnexion'])){
 			?>
 				<form method="post" action="connexion.php" align="center">
@@ -78,13 +83,13 @@
 				$_SESSION['username'] = $resultat['mailUtilisateur'];
 				$_SESSION['idUtilisateur'] = $resultat['idUtilisateur'];
 				if($resultat['estMedecin']) {
-					$_SESSION['login'] = "Medecin";
+					$_SESSION['login'] = "Medecin";	
 				} else {
 					$_SESSION['login'] = "Patient";
 				}
 				$redirect = "accueil.php";
 			} else {
-				$redirect = "connexion.php";
+				$redirect = "connexion.php?error=login";
 			}
 			 
 			$req->closeCursor();
