@@ -87,7 +87,7 @@
 				} else {
 					$_SESSION['login'] = "Patient";
 				}
-				$redirect = "accueil.php";
+				$redirect = "accueil.php?success=login";
 			} else {
 				$redirect = "connexion.php?error=login";
 			}
