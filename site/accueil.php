@@ -37,7 +37,7 @@
 			<?php 
 			if(isset($_GET['success'])){
 				if($_GET['success'] == 'login'){
-					echo '<p> Connected succesfully </p>';
+					echo '<p> Connected successfully </p>';
 				}
 			}
 
