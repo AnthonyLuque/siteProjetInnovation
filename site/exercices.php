@@ -35,7 +35,7 @@
 				// Si l'utilisateur est un Patient
 				if ($_SESSION['login'] == "Patient"){ 
 				
-					$req = $bdd-> prepare('SELECT * FROM associationexcercicepatient,exercice WHERE idPatient = :idUtilisateur AND associationexcercicepatient.idExercice = exercice.idExercice');
+					$req = $bdd-> prepare('SELECT * FROM associationexcercicepatient,exercice WHERE idPatient = :idUtilisateur AND associationexcercicepatient.idExercice = exercice.idExercice ORDER BY exercice.nomExercice');
 					$req->bindValue('idUtilisateur', $_SESSION['idUtilisateur'], PDO::PARAM_STR);
 					$req->execute();
 					
@@ -43,7 +43,7 @@
 			?> 
 						<div class="resultatRequete"> 
 			<?php
-						echo $resultat['nomExercice']; 
+							echo $resultat['nomExercice']; 
 			?> 
 						</div> 
 			<?php
@@ -52,14 +52,14 @@
 				// Si l'utilisateur est un Medecin
 				} else {
 
-					$req = $bdd-> prepare('SELECT * FROM exercice');
+					$req = $bdd-> prepare('SELECT * FROM exercice ORDER BY exercice.nomExercice');
 					$req->execute();
 					
 					while($resultat = $req->fetch(PDO::FETCH_ASSOC)) {
 			?> 
 						<div class="resultatRequete"> 
 			<?php
-						echo $resultat['nomExercice']; 
+							echo $resultat['nomExercice']; 
 			?> 
 						</div> 
 			<?php

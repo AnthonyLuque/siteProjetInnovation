@@ -14,6 +14,27 @@
 	width: 80%;
 }
 
+.ajoutLigne {
+	display : flex;
+	justify-content : space-between;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+.selectLigne {
+	display : flex;
+	justify-content : flex-start;
+	width: 100%;
+	margin: 4px 2px;
+}
+
+.boutonsAjoutLigne {
+	display : flex;
+	justify-content : flex-end;
+}
+
 .ligneRequete {
 	padding-left : 10px;
 	padding-right : 10px;
